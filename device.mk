@@ -17,3 +17,6 @@ PRODUCT_HOST_PACKAGES += \
 ## Init-Files
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/init-files/init.amlogic.wifi_buildin.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.wifi_buildin.rc
+
+# Inherit temp DNM configuration
+$(call inherit-product, $(LOCAL_PATH)/temp.mk)
