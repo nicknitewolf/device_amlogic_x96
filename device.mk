@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/amlogic/x96w
 
-$(call inherit-product, vendor/amlogic/x96w/x96w-vendor.mk)
-
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
 
 ## Factory
