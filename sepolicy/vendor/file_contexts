@@ -1,0 +1,3 @@
+# Insmod
+/vendor/bin/init\.insmod\.sh                                         u:object_r:init-insmod-sh_exec:s0
+/vendor/etc/init\.insmod\.cfg                                        u:object_r:init-insmod-sh_exec:s0
