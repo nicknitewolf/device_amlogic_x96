@@ -18,13 +18,6 @@ TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 ## Wi-Fi
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_icomm
-BOARD_WLAN_DEVICE := ssv6051
-BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_icomm
-WIFI_DRIVER_MODULE_PATH := /vendor/lib/modules/ssv6051.ko
-WIFI_DRIVER_MODULE_NAME := ssv6051
-WIFI_DRIVER_MODULE_ARG  := "stacfgpath=/vendor/etc/wifi/ssv6051/ssv6051-wifi.cfg"
-WPA_SUPPLICANT_VERSION := VER_0_8_X
+WIFI_MODULE := multiwifi
 
-BOARD_VENDOR_KERNEL_MODULES := $(LOCAL_PATH)/vendor/ssv6051/ssv6051.ko
+include hardware/amlogic/wifi/configs/wifi.mk
