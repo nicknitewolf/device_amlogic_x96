@@ -12,3 +12,6 @@ ro.vendor.nrdp.modelgroup=sabrina
 ro.opengles.version=131072
 debug.renderengine.backend=gles
 debug.hwui.use_buffer_age=false
+
+## SOC
+ro.soc.model=AMLS905W
