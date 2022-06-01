@@ -14,6 +14,9 @@ $(call inherit-product, vendor/amlogic/q6x/q6x-vendor.mk)
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
 
+## Platform
+TARGET_AMLOGIC_SOC := gxl
+
 # Wi-Fi
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/amlogic/kernel-modules/icomm/wpa_supplicant_8_lib
