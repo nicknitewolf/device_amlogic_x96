@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-include device/amlogic/gx-common/BoardConfigCommon.mk
-
 DEVICE_PATH := device/amlogic/q6x
 
 ## Bootloader
@@ -28,3 +26,6 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_icomm
 BOARD_WLAN_DEVICE := icomm
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_icomm
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+
+## Common Tree
+include device/amlogic/gx-common/BoardConfigCommon.mk
