@@ -9,6 +9,9 @@ DEVICE_PATH := device/amlogic/q6x
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := q6x
 
+## Bluetooth (or lack thereof)
+BOARD_HAVE_BLUETOOTH := false
+
 ## Kernel
 TARGET_DTB_NAME := gxl_p281_1g gxl_p281_2g
 

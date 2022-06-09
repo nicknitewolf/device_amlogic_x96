@@ -8,6 +8,9 @@ DEVICE_PATH := device/amlogic/q6x
 
 $(call inherit-product, vendor/amlogic/q6x/q6x-vendor.mk)
 
+## Bluetooth (or lack thereof)
+TARGET_HAVE_BLUETOOTH := false
+
 ## Factory
 PRODUCT_HOST_PACKAGES += \
     aml_image_packer
