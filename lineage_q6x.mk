@@ -9,6 +9,9 @@ TARGET_HAS_TEE := false
 # Inherit some common AOSP stuff
 $(call inherit-product, device/google/atv/products/atv_base.mk)
 
+# Inherit lowram configs
+$(call inherit-product, device/google/atv/products/atv_lowram_defaults.mk)
+
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 
