@@ -3,4 +3,8 @@
     "repository": "android_device_amlogic_gx-common",
     "target_path": "device/amlogic/gx-common"
   },
+  {
+    "repository": "android_hardware_wifi_icomm_drivers_ssv6xxx",
+    "target_path": "hardware/wifi/icomm/drivers/ssv6xxx"
+  }
 ]
