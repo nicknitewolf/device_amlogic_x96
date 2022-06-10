@@ -22,7 +22,6 @@ NEEDED_IMAGES := \
     dtbo.img \
     vbmeta.img \
     odm.img \
-    product.img \
     system.img \
     vendor.img
 
@@ -45,7 +44,6 @@ endif
 	$(hide) $(call aml-symlink-file, $(INSTALLED_2NDBOOTLOADER_TARGET), dtb.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/dtbo.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/odm.img)
-	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/product.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/system.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vendor.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vbmeta.img)
