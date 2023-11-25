@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2021-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -21,10 +21,9 @@ NEEDED_IMAGES := \
     recovery.img \
     dtbo.img \
     vbmeta.img \
-    odm.img \
-    product.img \
+    vendor.img \
     system.img \
-    vendor.img
+    logo.img
 
 $(INSTALLED_AML_UPGRADE_PACKAGE_TARGET): $(addprefix $(PRODUCT_OUT)/,$(NEEDED_IMAGES)) $(AML_IMAGE_TOOL)
 	$(hide) mkdir -p $(PRODUCT_UPGRADE_OUT)
@@ -44,10 +43,10 @@ endif
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/recovery.img)
 	$(hide) $(call aml-symlink-file, $(INSTALLED_2NDBOOTLOADER_TARGET), dtb.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/dtbo.img)
+	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vendor.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/odm.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/product.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/system.img)
-	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vendor.img)
 	$(hide) $(call aml-symlink-file, $(PRODUCT_OUT)/vbmeta.img)
 	$(hide) $(AML_IMAGE_TOOL) -r $(PACKAGE_CONFIG_FILE) $(PRODUCT_UPGRADE_OUT)/ $@
 	$(hide) rm -rf $(PRODUCT_UPGRADE_OUT)
