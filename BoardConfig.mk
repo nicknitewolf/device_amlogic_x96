@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -32,6 +32,8 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_icomm
 BOARD_WLAN_DEVICE := icomm
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_icomm
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WIFI_DRIVER_SOCKET_IFACE := wlan0
+PRODUCT_CFI_INCLUDE_PATHS += hardware/amlogic/kernel-modules/icomm/wpa_supplicant_8_lib
 
 ## Common Tree
 include device/amlogic/gx-common/BoardConfigCommon.mk
